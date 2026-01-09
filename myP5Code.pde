@@ -4,18 +4,25 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+ var ufo= 522;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
+
+ 
   
+  //ufo
+  fill(169,169,169)
 
+ellipse(ufo,187, 100, 100);
+ellipse(ufo,187, 200, 50);
 
+ufo -= 1;
 
-
-
+ if(ufo < -20)
+ ufo = 520;
 
   if(mousePressed){showXYPositions();}
 
