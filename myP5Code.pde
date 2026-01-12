@@ -5,6 +5,7 @@ void setup() {
 
 //🎯Variable Declarations Go Here
  var ufo= 522;
+ var light=15;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -18,15 +19,31 @@ draw = function(){
 
 ellipse(ufo,187, 100, 100);
 ellipse(ufo,187, 200, 50);
+rect(ufo,98,10,40,10);
+
+//light
+   fill(255, 191, 0)
+
+ellipse(ufo,95, light, light);
 
 ufo -= 1;
 
- if(ufo < -20)
- ufo = 520;
+ if(ufo < -110)
+ ufo = 720;
+
+light += 0.2;
+
+if(light > 20)
+ light = 10;
 
   if(mousePressed){showXYPositions();}
 
 }
+
+ufo -= 1;
+
+ if(ufo < -110)
+ ufo = 720;
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
