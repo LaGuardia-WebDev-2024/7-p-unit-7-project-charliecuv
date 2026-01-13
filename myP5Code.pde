@@ -6,6 +6,8 @@ void setup() {
 //🎯Variable Declarations Go Here
  var ufo= 522;
  var light=15;
+ 
+ 
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -19,7 +21,18 @@ draw = function(){
 
 ellipse(ufo,187, 100, 100);
 ellipse(ufo,187, 200, 50);
-rect(ufo,98,10,40,10);
+rect(ufo -5,98,10,40,10);
+
+
+fill(136,231,136)
+ellipse(ufo,187, 10, 10);
+ellipse(ufo + 20,187, 10, 10);
+ellipse(ufo + 40,187, 10, 10);
+ellipse(ufo + 60,187, 10, 10);
+ellipse(ufo - 20,187, 10, 10);
+ellipse(ufo - 40,187, 10, 10);
+ellipse(ufo - 60,187, 10, 10);
+
 
 //light
    fill(255, 191, 0)
@@ -31,6 +44,7 @@ ufo -= 1;
  if(ufo < -110)
  ufo = 720;
 
+
 light += 0.2;
 
 if(light > 20)
@@ -40,10 +54,10 @@ if(light > 20)
 
 }
 
-ufo -= 1;
+ window -=1;
 
- if(ufo < -110)
- ufo = 720;
+ if(window < -110)
+ window = 720;
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
